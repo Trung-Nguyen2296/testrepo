@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My Portfilio</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="contact">
+				<h2>Trung Nguyen</h2>
+				<p>✉️ trungnguyen@gmail.com</p>
+				<p>📞 +9 555 444 333</p>
+			</div>
+			<nav class="navigation">
+				<a href="#about">About Me</a>
+				<a href="#skills">Skills</a>
+				<a href="#projects">Projects</a>
+				<a href="#recommendations">Recommendations</a>
+			</nav>
+		</header>
+		<div class="profile" id="about">
+			<img
+				src="..\images\vecteezy_office-worker-cartoon-character_54956282.jpg"
+				width="200"
+				height="200"
+				alt="My image"
+			/>
+			<h1>Hi, I'm Trung Nguyen! 👋</h1>
+			<p>
+				I am a full stack developer with 1 years of experience in both
+				application and presentation layers and 0.5 years of experience in
+				Mobile Developed. I have worked on applications and microservices
+				deployed on Vercel. I am currently a University student.
+			</p>
+		</div>
+		<div class="skills" id="skills">
+			<h1>Skills</h1>
+			<div class="skills-grid">
+				<div class="skill-item">
+					<img
+						src="..\images\HTML5_logo_and_wordmark.svg.webp"
+						width="50"
+						height="50"
+						alt="HTML Logo"
+					/>
+					<p>HTML</p>
+					<p>1 years experience</p>
+				</div>
+				<div class="skill-item">
+					<img
+						src="..\images\JavaScript-Logo.png"
+						width="80"
+						height="50"
+						alt="JS Logo"
+					/>
+					<p>JavaScript</p>
+					<p>1 years experience</p>
+				</div>
+				<div class="skill-item">
+					<img
+						src="..\images\CSS3_logo_and_wordmark.svg.webp"
+						width="35"
+						height="50"
+						alt="CSS Logo"
+					/>
+					<p>CSS</p>
+					<p>1 years experience</p>
+				</div>
+				<div class="skill-item">
+					<img
+						src="..\images\Node.js_logo.svg.webp"
+						width="50"
+						height="50"
+						alt="NodeJS Logo"
+					/>
+					<p>NodeJS</p>
+					<p>0.5 years experience</p>
+				</div>
+				<div class="skill-item">
+					<img
+						src="..\images\React-icon.svg.webp"
+						width="50"
+						height="50"
+						alt="React Logo"
+					/>
+					<p>React</p>
+					<p>0.5 years experience</p>
+				</div>
+				<div class="skill-item">
+					<img
+						src="..\images\images.png"
+						width="80"
+						height="60"
+						alt="Kotlin Logo"
+					/>
+					<p>Kotlin</p>
+					<p>0.5 years experience</p>
+				</div>
+			</div>
+		</div>
+		<div class="projects" id="projects">
+			<h1>Projects</h1>
+
+			<div class="project">
+				<h3>DSA Visualization</h3>
+
+				<ul>
+					<li>
+						Developed a website for studying Data Stucture and Algorithm. With
+						many difference algorithm like sorting and tree,... Using React
+						framework and html, css, js.
+					</li>
+				</ul>
+			</div>
+			<hr />
+			<div class="project">
+				<h3>Booking Tour App</h3>
+
+				<ul>
+					<li>
+						Developed a secure application for booking tour, hotel. For both
+						provider and customer, provider can manage their listings and
+						customers can book tours. Using nodejs and express for backend,
+						supabase for database and kotlin for frontend.
+					</li>
+				</ul>
+			</div>
+			<hr />
+			<div class="project">
+				<h3>Smart Retail</h3>
+
+				<ul>
+					<li>
+						Developed a secure application for retail store. It intergrates with
+						reinforced learning to predict the best product for customer. It
+						also has a dashboard to show the best product and the best seller.
+						It also has computer vision to automatically calculate the total
+						price of the products for customer. Using nodejs and express for
+						backend and html, css, js for frontend.
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="recommendations" id="recommendations">
+			<h1>Recommendations</h1>
+			<div class="recomment-grid" id="recomment-grid">
+				<div class="recomment">
+					<p>
+						<span class="quote">"</span>I had the opportunity to work with Trung
+						on several web development projects. He is a quick learner with a
+						strong understanding of both front-end and back-end development. He
+						is always willing to learn new technologies, takes responsibility
+						for his work, and is a reliable team player. I would definitely
+						recommend him for any software development team.<span class="quote"
+							>"</span
+						>
+					</p>
+				</div>
+				<div class="recomment">
+					<p>
+						<span class="quote">"</span>Trung is a dedicated Full Stack
+						Developer with a strong passion for software development. He has
+						good knowledge of web technologies and is comfortable working across
+						both application and presentation layers. He approaches problems
+						logically, learns quickly, and always puts effort into delivering a
+						quality solution. He would be a valuable addition to any development
+						team.<span class="quote">"</span>
+					</p>
+				</div>
+				<div class="recomment">
+					<p>
+						<span class="quote">"</span>I had the pleasure of collaborating with
+						Trung on multiple projects. His ability to understand requirements
+						quickly and translate them into clean, maintainable code is
+						impressive. He stays up-to-date with modern development practices
+						and is always eager to share knowledge with the team. A great
+						developer and team player.<span class="quote">"</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="leave-a-recomment">
+				<form
+					onsubmit="
+						addRecomment();
+						showPopup();
+						return false;
+					"
+				>
+					<h2>Leave a Recommendation</h2>
+					<input type="text" placeholder="Name (Optional)" id="name" />
+					<textarea placeholder="Message" id="message"></textarea>
+					<input type="submit" id="submit-btn" value="Submit" />
+				</form>
+			</div>
+
+			<div class="popup-backdrop" id="popup-backdrop"></div>
+			<div class="popup" id="popup">
+				<svg
+					width="40"
+					height="40"
+					viewBox="0 0 100 100"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<circle
+						cx="50"
+						cy="50"
+						r="45"
+						fill="none"
+						stroke="black"
+						stroke-width="4"
+					/>
+
+					<path
+						d="M 30 50 L 42 62 L 70 34"
+						fill="none"
+						stroke="black"
+						stroke-width="5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+				<h3>Thanks for leaving a recommendation!</h3>
+				<button onclick="hidePopup()">OK</button>
+			</div>
+		</div>
+		<a href="#" class="scroll-to-top">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="white"
+				width="63px"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+				/>
+			</svg>
+		</a>
+		<script src="script.js"></script>
+	</body>
+</html>
